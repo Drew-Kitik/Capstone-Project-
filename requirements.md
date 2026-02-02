@@ -16,7 +16,7 @@ scikit-learn>=1.2.0
 
 statsmodels>=0.14.0
 
-Full _pip freeze_ of enviornment:
+Full _pip freeze_ of environment:
 
 absl-py==2.3.1
 asttokens==3.0.0
