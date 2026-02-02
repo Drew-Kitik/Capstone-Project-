@@ -4,6 +4,8 @@ This project analyzes the virtual economy of Old School RuneScape (OSRS) using h
 
 February 1, 2025 – August 30, 2025
 
+The provided parquet files within the DATA folder reproduce the exact dataset used in the final paper. The API data scrapper does not need to be run to view the project. 
+
 **Objectives:**
 
 The goal of the project was to model price dynamics, detect structural changes, and identify clustering behavior across high-value in-game assets using time-series and unsupervised learning methods. The project contains the following: 
@@ -23,7 +25,7 @@ The goal of the project was to model price dynamics, detect structural changes, 
 
 -Final submitted capstone paper (PDF)
 
-_*The included Parquet files reproduce the exact dataset used in the final paper to ensure methodological consistency._
+
 
 **Methods:**
 
