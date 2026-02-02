@@ -5,9 +5,9 @@ This project analyzes the virtual economy of Old School RuneScape (OSRS) using h
 February 1, 2025 – August 30, 2025
 
 **Objectives:**
-The goal of the project was to model price dynamics, detect structural changes, and identify clustering behavior across high-value in-game assets using time-series and unsupervised learning methods.
 
-This repository contains:
+The goal of the project was to model price dynamics, detect structural changes, and identify clustering behavior across high-value in-game assets using time-series and unsupervised learning methods. The project contains the following: 
+
 
 -API-based data scraper (OSRS Grand Exchange)
 
