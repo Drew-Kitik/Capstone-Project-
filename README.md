@@ -4,7 +4,7 @@ This project analyzes the virtual economy of Old School RuneScape (OSRS) using h
 
 February 1, 2025 – August 30, 2025
 
-The provided parquet files within the DATA folder reproduce the exact dataset used in the final paper. The API data scrapper does not need to be run to view the project. 
+The provided parquet files within the DATA folder reproduce the exact dataset used in the final paper. The API data scrapper does not need to be run to view the project. Initial data collection exported to Excel format. During full A–Z collection, the 6H time-series dataset exceeded Excel’s row limit (1,048,576 rows). The pipeline was refactored to use Parquet format, eliminating row constraints and improving I/O performance. This design change allowed full-scale dataset persistence without artificial partitioning.
 
 **Objective:**
 
