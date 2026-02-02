@@ -11,34 +11,34 @@ The provided parquet files within the DATA folder reproduce the exact dataset us
 The goal of the project was to model price dynamics, detect structural changes, and identify clustering behavior across high-value in-game assets using time-series and unsupervised learning methods. The project contains the following:
 
 
--API-based data scraper (OSRS Grand Exchange)
+API-based data scraper (OSRS Grand Exchange)
 
--Processed datasets in Parquet format
+Processed datasets in Parquet format
 
--Time-series feature engineering pipeline
+Time-series feature engineering pipeline
 
--PCA-based dimensionality reduction
+PCA-based dimensionality reduction
 
--K-Means clustering analysis
+K-Means clustering analysis
 
--Change-point detection (ruptures)
+Change-point detection (ruptures)
 
--Final submitted capstone paper (PDF)
+Final submitted capstone paper (PDF)
 
 
 
 **Methods:**
 
--Principal Component Analysis (PCA)
+Principal Component Analysis (PCA)
 
--K-Means Clustering
+K-Means Clustering
 
--Silhouette Score Evaluation
+Silhouette Score Evaluation
 
--Autocorrelation Function (ACF)
+Autocorrelation Function (ACF)
 
--Change-Point Detection (ruptures)
+Change-Point Detection (ruptures)
 
--Time-Series Visualization
+Time-Series Visualization
 
--Volatility and Return Engineering
+Volatility and Return Engineering
