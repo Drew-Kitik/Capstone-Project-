@@ -1,12 +1,10 @@
 # Capstone-Project: osrs-virtual-economy
-OSRS Virtual Economy Modeling
-Master’s Capstone Project – Data Science
 
 This project analyzes the virtual economy of Old School RuneScape (OSRS) using historical Grand Exchange market data collected between:
 
 February 1, 2025 – August 30, 2025
 
-Objectives:
+**Objectives:**
 The goal of the project was to model price dynamics, detect structural changes, and identify clustering behavior across high-value in-game assets using time-series and unsupervised learning methods.
 
 This repository contains:
@@ -25,9 +23,9 @@ This repository contains:
 
 -Final submitted capstone paper (PDF)
 
-*The included Parquet files reproduce the exact dataset used in the final paper to ensure methodological consistency.
+_*The included Parquet files reproduce the exact dataset used in the final paper to ensure methodological consistency._
 
-Methods:
+**Methods:**
 
 -Principal Component Analysis (PCA)
 
