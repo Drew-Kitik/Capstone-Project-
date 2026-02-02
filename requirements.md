@@ -1,16 +1,22 @@
 Requirements: 
 
 Python 3.10.19 
+
 tensorflow 3.12.1 (for nueral networks)
 
 numpy>=1.24.0
+
 pandas>=2.0.0
+
 matplotlib>=3.7.0
+
 seaborn>=0.12.0
+
 scikit-learn>=1.2.0
+
 statsmodels>=0.14.0
 
-**pip freeze**
+Full _pip freeze_ of enviornment:
 
 absl-py==2.3.1
 asttokens==3.0.0
