@@ -1,4 +1,4 @@
-# Capstone-Project-
+# Capstone-Project: osrs-virtual-economy
 OSRS Virtual Economy Modeling
 Master’s Capstone Project – Data Science
 
