@@ -6,9 +6,9 @@ February 1, 2025 – August 30, 2025
 
 The provided parquet files within the DATA folder reproduce the exact dataset used in the final paper. The API data scrapper does not need to be run to view the project. 
 
-**Objectives:**
+**Objective:**
 
-The goal of the project was to model price dynamics, detect structural changes, and identify clustering behavior across high-value in-game assets using time-series and unsupervised learning methods. The project contains the following: 
+The goal of the project was to model price dynamics, detect structural changes, and identify clustering behavior across high-value in-game assets using time-series and unsupervised learning methods. The project contains the following:
 
 
 -API-based data scraper (OSRS Grand Exchange)
