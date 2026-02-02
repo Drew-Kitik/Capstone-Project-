@@ -22,7 +22,6 @@ import random
 # --------------------
 # No matter how fine tuned these settings were without the cooldown feature the API pull would fail regardless of the request delay lengths.
 # API would get upset roughly after 90-120 seconds of continous requests, implemented cooldown period (fine tuned via experimentation)
-# The incremental save feature I made from early iterations saved me when my output accidentally hit the max output rows for excel. 
 # Index range refers to position of the sorted mapping list (alphabetical) and is not the raw API order for the MAPPING URL link below. 
 # Features below are for custom set values for delays between requests, set cooldown per x requests, cooldown length and incremental save length. 
 REQUEST_DELAY = 2                   
@@ -37,7 +36,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = PROJECT_ROOT / "data" / "macro"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-PARTIAL_PATH = OUTPUT_DIR / "osrs_macro_timeseries_partial.xlsx"
+PARTIAL_PATH = OUTPUT_DIR / "osrs_macro_timeseries_partial.parquet"
 CHECKPOINT_PATH = OUTPUT_DIR / "macro_checkpoint.txt"
 
 
@@ -219,14 +218,15 @@ for idx, item in enumerate(all_items, start=1):
 # Incremental saving feature.
     if items_since_save >= INCREMENTAL_SAVE_EVERY_ITEMS:
         print(f"-- Incremental save after {INCREMENTAL_SAVE_EVERY_ITEMS} items --")
-        pd.DataFrame(all_rows).to_excel(PARTIAL_PATH, index=False)
+        pd.DataFrame(all_rows).to_parquet(PARTIAL_PATH, index=False)
         items_since_save = 0
 
 # Final save. 
 today_str = datetime.today().strftime("%Y-%m-%d")
-final_path = os.path.join(OUTPUT_DIR, f"osrs_macro_timeseries_AZ_{today_str}.xlsx")
-pd.DataFrame(all_rows).to_excel(final_path, index=False)
+final_path = os.path.join(OUTPUT_DIR, f"osrs_macro_timeseries_AZ_{today_str}.parquet")
+pd.DataFrame(all_rows).to_parquet(final_path, index=False)
 print(f"Macro dataset saved as '{final_path}'")
 print(f"Checkpoint file at: {CHECKPOINT_PATH}")
 if os.path.exists(PARTIAL_PATH):
     print(f"Latest partial file at: {PARTIAL_PATH}")
+
